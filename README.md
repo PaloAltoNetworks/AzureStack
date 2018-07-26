@@ -1,7 +1,7 @@
 # AzureStack
 This is an example template for deploying VM-Series (BYOL edition, PAN-OS 8.1 or higher) on your AzureStack deployments. The template creates a VM-Series VM with 3 NICs that should be connectd to your management, untrust and trust subnets in a VNET. 
 
-Note: VM-Series will not be directly visible in the AzureStack Marketplace via syndication since the image (VHD) for it is normally hidden behind a Solution Template in the public Azure Marketplace. But you can use this template or other methods to  deploy it. 
+Note: VM-Series will not be directly visible in the AzureStack Marketplace via syndication since the image (VHD) for it is normally hidden behind a Solution Template in the public Azure Marketplace. The AzureStack administrator will need to syndicate VM-Series using the [steps described here](https://docs.microsoft.com/en-us/azure/azure-stack/azure-stack-download-azure-marketplace-item). But you can use this template or other methods to  deploy it. 
 
 ## Deployment steps
 * Login to your AzureStack portal
