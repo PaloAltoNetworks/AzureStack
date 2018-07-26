@@ -9,7 +9,7 @@ Note: VM-Series will not be directly visible in the AzureStack Marketplace via s
 * Copy-paste the contents of the template provided here
 * Deploy it and provided necessary parameters.
 
-Detailed deployment steps can be found here <TBD>. 
+Detailed deployment steps can be [found here](https://www.paloaltonetworks.com/documentation/81/virtualization/virtualization/set-up-the-vm-series-firewall-on-azure/deploy-the-vm-series-firewalls-on-azure-stack). 
   
 You can deploy the VM-Series using your own custom templates by using the following variables to refer to the VM-Series image:
 ```
