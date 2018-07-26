@@ -9,6 +9,8 @@ Note: VM-Series will not be directly visible in the AzureStack Marketplace via s
 * Copy-paste the contents of the template provided here
 * Deploy it and provided necessary parameters.
 
+Detailed deployment steps can be found here <TBD>. 
+  
 You can deploy the VM-Series using your own custom templates by using the following variables to refer to the VM-Series image:
 ```
 Publisher: paloaltonetworks
