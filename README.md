@@ -1,7 +1,7 @@
-# AzureStack
-This is an example template for deploying VM-Series (BYOL edition, PAN-OS 8.1 or higher) on your AzureStack deployments. The template creates a VM-Series VM with 3 NICs that should be connectd to your management, untrust and trust subnets in a VNET. 
+# Azure Stack
+This is an example template for deploying VM-Series (BYOL edition, PAN-OS 8.1 or higher) on your Azure Stack deployments. The template creates a VM-Series VM with 3 NICs that should be connectd to your management, untrust and trust subnets in a VNET. 
 
-Note: VM-Series will not be directly visible in the AzureStack Marketplace via syndication since the image (VHD) for it is normally hidden behind a Solution Template in the public Azure Marketplace. The AzureStack administrator will need to syndicate VM-Series using the [steps described here](https://docs.microsoft.com/en-us/azure/azure-stack/azure-stack-download-azure-marketplace-item). But you can use this template or other methods to  deploy it. 
+Note: VM-Series will not be directly visible in the Azure Stack Marketplace via syndication since the image (VHD) for it is normally hidden behind a Solution Template in the public Azure Marketplace. The Azure Stack administrator will need to syndicate VM-Series using the [steps described here](https://docs.microsoft.com/en-us/azure/azure-stack/azure-stack-download-azure-marketplace-item). Next you can use template below or other [methods](https://github.com/Azure/AzureStack-QuickStart-Templates/tree/master/101-vm-linux-create) to  deploy it. For other example templates from Microsoft [see here](https://docs.microsoft.com/en-us/azure/azure-stack/user/azure-stack-create-vm-template).
 
 ## Deployment steps
 * Login to your AzureStack portal
@@ -11,7 +11,7 @@ Note: VM-Series will not be directly visible in the AzureStack Marketplace via s
 
 Detailed deployment steps can be [found here](https://www.paloaltonetworks.com/documentation/81/virtualization/virtualization/set-up-the-vm-series-firewall-on-azure/deploy-the-vm-series-firewalls-on-azure-stack). 
   
-You can deploy the VM-Series using your own custom templates by using the following variables to refer to the VM-Series image:
+You can deploy the VM-Series using your own custom templates (or PowerShell for Azure Stack) by using the following variables to refer to the VM-Series image:
 ```
 Publisher: paloaltonetworks
 Offer: vmseries1
