@@ -116,20 +116,14 @@
       "metadata": {
         "description": "Name of the public IP resource"
       }
-    },    
-    "storageAccountType": {
-      "type": "string",
-      "metadata": {
-        "description": "Type of the storage account created"
-      },
-      "defaultValue": "Standard_LRS"
-    }
+    }    
   },
   "variables": {
     "nsgName" : "DefaultNSG",  
     "imagePublisher": "paloaltonetworks",
     "imageOffer": "vmseries1",
     "imageSku" : "byol",
+    "storageAccountType" : "Standard_LRS",
     "vmStorageAccountContainerName" : "vhd",
     "OSDiskName" : "[concat(parameters('vmName'),'-osDisk')]", 
     "nicName0": "[concat(parameters('vmName'), '-', parameters('publicIPAddressName'), '-eth0')]",
@@ -146,7 +140,7 @@
     {
       "apiVersion": "2016-01-01",    
       "type": "Microsoft.Storage/storageAccounts",
-      "name": "[parameters('storageAccountName')]",
+      "name": "[variables('storageAccountName')]",
       "location": "[resourceGroup().location]",
       "sku": {
         "name": "[parameters('storageAccountType')]"
